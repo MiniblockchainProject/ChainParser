@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="ChainParser" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/ChainParser" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/ChainParser" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-std=c++11" />
+			<Add option="-m64" />
+			<Add option="-fexceptions" />
+			<Add directory="../ChainParser" />
+		</Compiler>
+		<Linker>
+			<Add option="-m64" />
+			<Add library="cryptocpp/bin/libcryptopp.a" />
+			<Add library="gmp/.libs/libgmp.a" />
+			<Add directory="cryptocpp/bin" />
+			<Add directory="gmp/.libs" />
+		</Linker>
+		<Unit filename="base58.h" />
+		<Unit filename="cryptocpp/3way.h" />
+		<Unit filename="cryptocpp/adler32.h" />
+		<Unit filename="cryptocpp/aes.h" />
+		<Unit filename="cryptocpp/algebra.h" />
+		<Unit filename="cryptocpp/algparam.h" />
+		<Unit filename="cryptocpp/arc4.h" />
+		<Unit filename="cryptocpp/argnames.h" />
+		<Unit filename="cryptocpp/asn.h" />
+		<Unit filename="cryptocpp/authenc.h" />
+		<Unit filename="cryptocpp/base32.h" />
+		<Unit filename="cryptocpp/base64.h" />
+		<Unit filename="cryptocpp/basecode.h" />
+		<Unit filename="cryptocpp/bench.h" />
+		<Unit filename="cryptocpp/blake2.h" />
+		<Unit filename="cryptocpp/blowfish.h" />
+		<Unit filename="cryptocpp/blumshub.h" />
+		<Unit filename="cryptocpp/camellia.h" />
+		<Unit filename="cryptocpp/cast.h" />
+		<Unit filename="cryptocpp/cbcmac.h" />
+		<Unit filename="cryptocpp/ccm.h" />
+		<Unit filename="cryptocpp/chacha.h" />
+		<Unit filename="cryptocpp/channels.h" />
+		<Unit filename="cryptocpp/cmac.h" />
+		<Unit filename="cryptocpp/config.h" />
+		<Unit filename="cryptocpp/cpu.h" />
+		<Unit filename="cryptocpp/crc.h" />
+		<Unit filename="cryptocpp/cryptlib.h" />
+		<Unit filename="cryptocpp/default.h" />
+		<Unit filename="cryptocpp/des.h" />
+		<Unit filename="cryptocpp/dh.h" />
+		<Unit filename="cryptocpp/dh2.h" />
+		<Unit filename="cryptocpp/dll.h" />
+		<Unit filename="cryptocpp/dmac.h" />
+		<Unit filename="cryptocpp/dsa.h" />
+		<Unit filename="cryptocpp/eax.h" />
+		<Unit filename="cryptocpp/ec2n.h" />
+		<Unit filename="cryptocpp/eccrypto.h" />
+		<Unit filename="cryptocpp/ecp.h" />
+		<Unit filename="cryptocpp/elgamal.h" />
+		<Unit filename="cryptocpp/emsa2.h" />
+		<Unit filename="cryptocpp/eprecomp.h" />
+		<Unit filename="cryptocpp/esign.h" />
+		<Unit filename="cryptocpp/factory.h" />
+		<Unit filename="cryptocpp/fhmqv.h" />
+		<Unit filename="cryptocpp/files.h" />
+		<Unit filename="cryptocpp/filters.h" />
+		<Unit filename="cryptocpp/fips140.h" />
+		<Unit filename="cryptocpp/fltrimpl.h" />
+		<Unit filename="cryptocpp/gcm.h" />
+		<Unit filename="cryptocpp/gf256.h" />
+		<Unit filename="cryptocpp/gf2_32.h" />
+		<Unit filename="cryptocpp/gf2n.h" />
+		<Unit filename="cryptocpp/gfpcrypt.h" />
+		<Unit filename="cryptocpp/gost.h" />
+		<Unit filename="cryptocpp/gzip.h" />
+		<Unit filename="cryptocpp/hex.h" />
+		<Unit filename="cryptocpp/hkdf.h" />
+		<Unit filename="cryptocpp/hmac.h" />
+		<Unit filename="cryptocpp/hmqv.h" />
+		<Unit filename="cryptocpp/hrtimer.h" />
+		<Unit filename="cryptocpp/ida.h" />
+		<Unit filename="cryptocpp/idea.h" />
+		<Unit filename="cryptocpp/integer.h" />
+		<Unit filename="cryptocpp/iterhash.h" />
+		<Unit filename="cryptocpp/keccak.h" />
+		<Unit filename="cryptocpp/lubyrack.h" />
+		<Unit filename="cryptocpp/luc.h" />
+		<Unit filename="cryptocpp/mars.h" />
+		<Unit filename="cryptocpp/md2.h" />
+		<Unit filename="cryptocpp/md4.h" />
+		<Unit filename="cryptocpp/md5.h" />
+		<Unit filename="cryptocpp/mdc.h" />
+		<Unit filename="cryptocpp/mersenne.h" />
+		<Unit filename="cryptocpp/misc.h" />
+		<Unit filename="cryptocpp/modarith.h" />
+		<Unit filename="cryptocpp/modes.h" />
+		<Unit filename="cryptocpp/modexppc.h" />
+		<Unit filename="cryptocpp/mqueue.h" />
+		<Unit filename="cryptocpp/mqv.h" />
+		<Unit filename="cryptocpp/nbtheory.h" />
+		<Unit filename="cryptocpp/network.h" />
+		<Unit filename="cryptocpp/nr.h" />
+		<Unit filename="cryptocpp/oaep.h" />
+		<Unit filename="cryptocpp/oids.h" />
+		<Unit filename="cryptocpp/osrng.h" />
+		<Unit filename="cryptocpp/ossig.h" />
+		<Unit filename="cryptocpp/panama.h" />
+		<Unit filename="cryptocpp/pch.h" />
+		<Unit filename="cryptocpp/pkcspad.h" />
+		<Unit filename="cryptocpp/polynomi.h" />
+		<Unit filename="cryptocpp/pssr.h" />
+		<Unit filename="cryptocpp/pubkey.h" />
+		<Unit filename="cryptocpp/pwdbased.h" />
+		<Unit filename="cryptocpp/queue.h" />
+		<Unit filename="cryptocpp/rabin.h" />
+		<Unit filename="cryptocpp/randpool.h" />
+		<Unit filename="cryptocpp/rc2.h" />
+		<Unit filename="cryptocpp/rc5.h" />
+		<Unit filename="cryptocpp/rc6.h" />
+		<Unit filename="cryptocpp/rdrand.h" />
+		<Unit filename="cryptocpp/resource.h" />
+		<Unit filename="cryptocpp/rijndael.h" />
+		<Unit filename="cryptocpp/ripemd.h" />
+		<Unit filename="cryptocpp/rng.h" />
+		<Unit filename="cryptocpp/rsa.h" />
+		<Unit filename="cryptocpp/rw.h" />
+		<Unit filename="cryptocpp/safer.h" />
+		<Unit filename="cryptocpp/salsa.h" />
+		<Unit filename="cryptocpp/seal.h" />
+		<Unit filename="cryptocpp/secblock.h" />
+		<Unit filename="cryptocpp/seckey.h" />
+		<Unit filename="cryptocpp/seed.h" />
+		<Unit filename="cryptocpp/serpent.h" />
+		<Unit filename="cryptocpp/serpentp.h" />
+		<Unit filename="cryptocpp/sha.h" />
+		<Unit filename="cryptocpp/sha3.h" />
+		<Unit filename="cryptocpp/shacal2.h" />
+		<Unit filename="cryptocpp/shark.h" />
+		<Unit filename="cryptocpp/simple.h" />
+		<Unit filename="cryptocpp/skipjack.h" />
+		<Unit filename="cryptocpp/smartptr.h" />
+		<Unit filename="cryptocpp/socketft.h" />
+		<Unit filename="cryptocpp/sosemanuk.h" />
+		<Unit filename="cryptocpp/square.h" />
+		<Unit filename="cryptocpp/stdcpp.h" />
+		<Unit filename="cryptocpp/strciphr.h" />
+		<Unit filename="cryptocpp/tea.h" />
+		<Unit filename="cryptocpp/tiger.h" />
+		<Unit filename="cryptocpp/trap.h" />
+		<Unit filename="cryptocpp/trdlocal.h" />
+		<Unit filename="cryptocpp/trunhash.h" />
+		<Unit filename="cryptocpp/ttmac.h" />
+		<Unit filename="cryptocpp/twofish.h" />
+		<Unit filename="cryptocpp/validate.h" />
+		<Unit filename="cryptocpp/vmac.h" />
+		<Unit filename="cryptocpp/wait.h" />
+		<Unit filename="cryptocpp/wake.h" />
+		<Unit filename="cryptocpp/whrlpool.h" />
+		<Unit filename="cryptocpp/winpipes.h" />
+		<Unit filename="cryptocpp/words.h" />
+		<Unit filename="cryptocpp/xtr.h" />
+		<Unit filename="cryptocpp/xtrcrypt.h" />
+		<Unit filename="cryptocpp/zdeflate.h" />
+		<Unit filename="cryptocpp/zinflate.h" />
+		<Unit filename="cryptocpp/zlib.h" />
+		<Unit filename="gmp/config.h" />
+		<Unit filename="gmp/fac_table.h" />
+		<Unit filename="gmp/fib_table.h" />
+		<Unit filename="gmp/gmp-impl.h" />
+		<Unit filename="gmp/gmp-mparam.h" />
+		<Unit filename="gmp/gmp.h" />
+		<Unit filename="gmp/gmpxx.h" />
+		<Unit filename="gmp/longlong.h" />
+		<Unit filename="gmp/mp_bases.h" />
+		<Unit filename="gmp/trialdivtab.h" />
+		<Unit filename="hash/haval.cpp" />
+		<Unit filename="hash/keccak.cpp" />
+		<Unit filename="hash/ripemd.cpp" />
+		<Unit filename="hash/sha2.cpp" />
+		<Unit filename="hash/sha2big.cpp" />
+		<Unit filename="hash/sph_haval.h" />
+		<Unit filename="hash/sph_keccak.h" />
+		<Unit filename="hash/sph_ripemd.h" />
+		<Unit filename="hash/sph_sha2.h" />
+		<Unit filename="hash/sph_tiger.h" />
+		<Unit filename="hash/sph_types.h" />
+		<Unit filename="hash/sph_whirlpool.h" />
+		<Unit filename="hash/tiger.cpp" />
+		<Unit filename="hash/whirlpool.cpp" />
+		<Unit filename="main.cpp" />
+		<Unit filename="sparsepp/spp.h" />
+		<Unit filename="sparsepp/spp_config.h" />
+		<Unit filename="sparsepp/spp_dlalloc.h" />
+		<Unit filename="sparsepp/spp_memory.h" />
+		<Unit filename="sparsepp/spp_smartptr.h" />
+		<Unit filename="sparsepp/spp_stdint.h" />
+		<Unit filename="sparsepp/spp_timer.h" />
+		<Unit filename="sparsepp/spp_traits.h" />
+		<Unit filename="sparsepp/spp_utils.h" />
+		<Unit filename="utils.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
